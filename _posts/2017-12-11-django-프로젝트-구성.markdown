@@ -1,0 +1,43 @@
+---
+layout: post
+title:  "django 배포환경 세팅"
+author: Pando
+categories: Til
+tag: django
+cover:  "/assets/instacode.png"
+---
+
+# django 프로젝트 구성
+
+### 문제점
+
+맨 처음에는 뭣모르고,
+```
+<django directory>
+	<app directory>
+```
+이렇게만 폴더를 구분해놓으니, 추후에 배포를 할때 다양한 환경들(Docker, AWS)이 django랑 구분이 안되게 섞여버렸다...
+
+### 해결책
+
+그래서 Two Scoops of Django을 읽고,
+```
+<root directory>
+	<django directory>
+		<app directory>
+```
+프로젝트 구성을 다음과 같이 바꿨다.
+
+나중에 root directory에는 docker와 aws의 환경등 django 이외의 환경들이 추가되기 때문인다.
+
+이 때, 만들어진 root app은 이름을 config로 해주는게 좋을 것 같다.
+
+```python
+django-admin startproject config
+```
+
+그러면 자동적으로 안에 소스를 config로 사용할 수 있을테니까,
+
+### 느낀 점
+
+처음에 폴더위치를 잘 잡아줘야 뒤늦게 후회를 안하니, 처음에 잘 만듭시다 :(
