@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "django 배포환경 세팅"
+title:  "django 프로젝트 구성"
 author: Pando
 categories: Til
 tag: django
