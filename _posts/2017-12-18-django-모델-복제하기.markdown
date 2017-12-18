@@ -1,0 +1,78 @@
+---
+layout: post
+title:  "Django 모델 복제하기"
+author: Pando
+categories: Til
+tag: django
+cover:  "/assets/instacode.png"
+---
+
+# django 모델 복제하기
+
+### 문제점
+
+모델 안에 많은 필드가 존재함으로써, 해당 모델과 비슷한 내용을 다시 만들려면 너무 오랜시간이 걸렸다.  
+그래서 모델을 일정부분 복사할 수 있는 함수를 만들어야 했다.  
+공감을 못한다면 예시를 들어보자.
+
+__예시__  
+베스킨로빈슨 개발자는 아이스크림 <3월 선호도 조사>라는 질문을 만들었는데, 해당 선택지는 무려 31가지다.  
+해당 설문이 끝나고, 회사에서는 앞으로 선호도 조사는 분기마다 다시 조사를 해야된다고 했다.  
+그래서 다음 질문 역시 모델 하나에 선택지 모델 31가지를 만들었다.  
+하지만 개발자는 매번 반복되는데, 다시 일일이 만들면 그건 피곤한 작업이 될 것이라는 생각을 했다.  
+그래서 모델을 복제해야겠다는 생각을 했다.  
+
+### 해결책
+
+이해를 돕기위해, 장고 튜토리얼에 있는 Question(질문) 모델과 Choice(선택지) 모델을 이용한다.  
+Question는 Choice가 ForeignKey관계이다.  
+코드는 다음과 같다.
+
+```python3
+
+class Question(models.Model):
+    question_text = models.CharField(max_length=200)
+    pub_date = models.DateTimeField('date published')
+
+    # 핵심
+    def duplicate(self):
+    	# 1) 미리 ForeginKey관계인 모델들을 호출한다.
+    	choice_list = self.choice_set.all()
+    	# 2) 해당 모델의 pk를 없앤다.
+    	self.pk = None
+    	# 3) 모델을 저장한다.
+    	self.save()
+    	# 4) Choice모델들도 복제 후, 복제된 Question 모델에 연결한다.
+    	for choice in choice_list:
+    		choice.pk = None
+    		# 5) 투표수는 초기화해준다.
+    		choice.votes = 0
+    		choice.save()
+    		self.choice_set.add(choice)
+
+
+class Choice(models.Model):
+    question = models.ForeignKey(Question, on_delete=models.CASCADE)
+    choice_text = models.CharField(max_length=200)
+    votes = models.IntegerField(default=0)
+
+```
+
+최대한 이해하기 쉽게 설명하려고 썼다. 정리를 하자면 다음과 같다.
+
+1. 모델에 __ForeginKey__, __OneToOneField__, __ManyToManyField__ 등 엮여있는 관계들은 먼저 호출한다.
+2. 해당 모델의 __pk__ 를 없앤다.
+3. 해당 모델을 저장한다. (이 순간, DB에 모델이 새로 생성되고, 해당 모델은 새로운 인스턴스가 되는 것!)
+4. Relationship이 있는 모델들도 모두 복제 후에 연결해준다.
+5. 해당 모델의 특정 필드를 초기화한다.
+
+### 정리
+2,3번이 핵심이라고 생각하는데, `self.pk = None`은 장고의 [save() method 알고리즘](!https://docs.djangoproject.com/en/2.0/ref/models/instances/#how-django-knows-to-update-vs-insert)을 보고 힌트를 얻었다.  
+즉, save() method 호출시, pk가 존재하면 __UPDATE__ 를, 없다면 __INSERT__ 를 시킨다는 것이다.  
+따라서, 해당 모델의 변경할 부분을 변경해주고 save()를 하면 모델은 DB에 새롭게 저장이 된다.   
+그리고 나머지 관계들도 복제 후에 `add`로 연결해주면 된다.
+
+### 느낀 점
+역시 문서를 잘 읽어야한다.  
+문서안에 답이있다.  
+더 좋은 방법이 있다면, 알려주세요 :)
