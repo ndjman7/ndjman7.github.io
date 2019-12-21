@@ -3,7 +3,7 @@ layout: post
 title:  "Django 모델 복제하기"
 author: Pando
 categories: Til
-tag: django
+tag: Django
 cover:  "/assets/instacode.png"
 ---
 

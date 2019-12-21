@@ -3,7 +3,7 @@ layout: post
 title:  "Django Pagination 중복 발생 이슈"
 author: Pando
 categories: Til
-tags: django pagination
+tags: Django pagination
 cover:  "/assets/instacode.png"
 ---
 

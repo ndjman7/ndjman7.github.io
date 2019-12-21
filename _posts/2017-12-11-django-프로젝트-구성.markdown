@@ -3,7 +3,7 @@ layout: post
 title:  "django 프로젝트 구성"
 author: Pando
 categories: Til
-tag: django
+tag: Django
 cover:  "/assets/instacode.png"
 ---
 

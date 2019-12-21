@@ -3,7 +3,7 @@ layout: post
 title:  "파이썬을 이용한 클린 코드를 위한 테스트 주도 개발 Intro"
 author: Pando
 categories: Til TDD
-tags: TDD django Python
+tags: TDD Django Python
 cover:  "/assets/instacode.png"
 ---
 
