@@ -41,7 +41,7 @@ jekyll-archives:
     tag: '/tag/:name/'
 
 # Disqus comments
-# disqus_shortname: bencentra
+disqus_shortname: pandos-blog
 
 # Google analytics
 ga_tracking_id: "UA-109455095-1"
