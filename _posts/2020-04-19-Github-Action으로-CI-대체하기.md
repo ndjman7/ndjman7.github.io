@@ -50,10 +50,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Python ${{ matrix.python-version }}
+    - name: Set up Python ${{ "{{ matrix.python-version " }}}}
         uses: actions/setup-python@v1
         with:
-        python-version: ${{ matrix.python-version }}
+        python-version: ${{ "{{ matrix.python-version " }}}}
     - name: Install Dependencies
         run: |
         python -m pip install --upgrade pip
@@ -97,10 +97,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Python ${{ matrix.python-version }}
+    - name: Set up Python ${{ "{{ matrix.python-version " }}}}
         uses: actions/setup-python@v1
         with:
-        python-version: ${{ matrix.python-version }}
+        python-version: ${{ "{{ matrix.python-version " }}}}
     - name: Install Dependencies
         run: |
         python -m pip install --upgrade pip
