@@ -79,7 +79,7 @@ jobs:
 3. 패키지 설치는 본인의 requirments.txt가 있는 곳으로 수정해준다.
 4. 마지막 테스트를 pytest로 만 바꿔준다.
 
-```YAML
+```YAML 설정
 name: Django CI
 
 on:
@@ -124,9 +124,15 @@ jobs:
 <br>
 파일을 수정하며 커밋하고 다시 push를 하면 pull request가 존재하므로 다시 Github Action이 동작합니다.
 <br><br>
+
 ![github_action](/assets/img/github_action/github_action_5.png)
 <br>
 성공!
+
+이제 제 pull request에서 check 표시로 인정받은 듯한 느낌을 받을 수 있습니다.
+<br>
+
+![github_action](/assets/img/github_action/github_action_6.png)
 
 ### 느낀 점
 
