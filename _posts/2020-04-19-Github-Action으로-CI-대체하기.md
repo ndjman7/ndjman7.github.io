@@ -27,8 +27,8 @@ Actions에서 [New workflow]에서 Django라는 프로젝트인 걸 알고 추�
 <br><br>
 ![github_action](/assets/img/github_action/github_action_1.png)
 
-### YAML
-[Set up this workflow]를 눌러 보면 기본적으로 어떻게 동적될건지 YML파일로 예시가 나와있습니다.
+### YAML 설정
+[Set up this workflow]를 눌러 보면 기본적으로 어떻게 Github Action이 동작 될건지 YAML 파일로 예시가 나와있습니다.
 
 ```YAML
 name: Django CI
@@ -79,7 +79,7 @@ jobs:
 3. 패키지 설치는 본인의 requirments.txt가 있는 곳으로 수정해준다.
 4. 마지막 테스트를 pytest로 만 바꿔준다.
 
-```YAML 설정
+```YAML
 name: Django CI
 
 on:
