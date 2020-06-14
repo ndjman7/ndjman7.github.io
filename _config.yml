@@ -86,15 +86,15 @@ social:
 
   - name: GitHub
     icon: github
-    username: pando
+    username: Pando
     url: https://github.com/ndjman7
     desc: Fork me on GitHub
     share: false
 
   - name: LinkedIn
     icon: linkedin
-    username:
-    url:
+    username: Pando
+    url: https://www.linkedin.com/in/%EB%8C%80%EC%A7%84-%EB%82%98-01406a141/
     desc: Connect with me on LinkedIn
     share: true
 
