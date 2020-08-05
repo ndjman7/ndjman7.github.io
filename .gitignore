@@ -9,3 +9,7 @@ _site
 # Bundler
 .bundle/
 vendor/
+
+.jekyll-cache/
+.jekyll-metadata
+
