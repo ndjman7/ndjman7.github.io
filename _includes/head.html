@@ -39,7 +39,7 @@
   {% if site.protocols.fb_image %}
   <!-- Facebook OGP cards -->
   <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
-  <meta property="og:url" content="{{ site.url }}" />
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
   <meta property="og:site_name" content="{{ site.title }}" />
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
   <meta property="og:type" content="website" />
@@ -65,11 +65,6 @@
   <meta property="os:rcs_type" content="{{ protocols.os_rcs_type }}" />
   <meta property="os:src" content="{{ protocols.os_src }}" />
   {% endif %}
-  <meta property="og:image" content="{% if page.cover %}{{ page.cover | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.protocols.twitter_image | prepend: site.baseurl | prepend: site.url }}{% endif %}"/> 
-  <meta property="og:url" content="{{ site.url }}"/> 
-  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"/> 
-  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
-
 
   <!-- Site styles -->
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
