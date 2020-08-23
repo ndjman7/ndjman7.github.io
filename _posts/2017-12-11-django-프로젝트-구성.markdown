@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "django 프로젝트 구성"
+title:  "Django 프로젝트 구성"
 author: Pando
 categories: Til
 tag: Django
