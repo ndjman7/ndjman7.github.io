@@ -4,7 +4,7 @@ title:  "Python Pacakge requirements.txt로 관리하기"
 author: Pando
 categories: Python
 tag: [Python, Package]
-cover:  "/assets/img/requirements/requirements2.png"
+cover:  "/assets/img/requirements/requirements-txt.png"
 ---
 
 ## Python Package 관리는 requirements.txt 라는 파일로 합니다.
@@ -15,13 +15,13 @@ Project는 내가 만든 코드와 여러가지 Python Package들로 이루어�
 
 만약 내 소스코드 이외의 Package 소스코드를 같이 관리하게 된다고 가정하면, 모든 Porject는 매우 무거워질 것입니다.
 
-![/assets/img/requirements/requirements1.png](/assets/img/requirements/requirements1.png)
+![project](/assets/img/requirements/project.png)
 
 따라서 어떤 Packake를 사용하는지 version을 명시한 목록만 txt 파일로 작성합니다.
 
 Python에서도 어떤 Package를 사용하고 있는지 명시해주는 requirements.txt라는 파일이 존재합니다.
 
-![/assets/img/requirements/requirements2.png](/assets/img/requirements/requirements2.png)
+![requirements.txt](/assets/img/requirements/requirements-txt.png)
 
 만약 내가 가상환경 안에서 `Django`라는 Pacakge를 사용한다고 가정한다면 requirements.txt에 담아주어야 합니다.
 
@@ -61,7 +61,7 @@ sqlparse==0.4.1
 
 이유는 Package도 결국 하나의 Project고 그 안에 또 다른 Package를 사용하기 때문입니다.
 
-![/assets/img/requirements/requirements3.png](/assets/img/requirements/requirements3.png)
+![package](/assets/img/requirements/package.png)
 
 Package 설치는 다음과 같은 명령어로 새로운 환경에 쉽게 설치할 수 있습니다.
 
