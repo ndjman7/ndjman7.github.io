@@ -104,5 +104,5 @@ URI는 URL을 포함하는 개념이고 URN은 말그대로 이름으로 나타�
 그래도 나처럼 URI와 URN이 궁금하다면 많은 블로그 중에 가장 자세하게 정리해둔 [블로그](https://danielmiessler.com/study/difference-between-uri-url/)를 링크로 걸어두겠다.
 
 ## 참고
-- https://ko.wikipedia.org/wiki/URL
-- https://developer.mozilla.org/ko/docs/Learn/Common_questions/What_is_a_URL
+- [https://ko.wikipedia.org/wiki/URL](https://ko.wikipedia.org/wiki/URL)
+- [https://developer.mozilla.org/ko/docs/Learn/Common_questions/What_is_a_URL](https://developer.mozilla.org/ko/docs/Learn/Common_questions/What_is_a_URL)
