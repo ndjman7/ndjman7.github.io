@@ -129,6 +129,9 @@ jobs:
 <br>
 성공!
 
+만약 `.env` 같은 파일을 사용하기 위해서는 다음 링크를 참고합니다.
+- https://docs.github.com/en/actions/security-guides/encrypted-secrets
+
 이제 제 pull request에서 check 표시로 인정받은 듯한 느낌을 받을 수 있습니다.
 <br>
 
