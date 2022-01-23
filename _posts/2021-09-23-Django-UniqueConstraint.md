@@ -2,9 +2,10 @@
 layout: post
 title:  "Django에서 UniqueConstraint 사용하기"
 author: Pando
-categories: Django
-tag: [Python, Django]
-cover:  "/assets/img/django/banner.jpg"
+header-img:  "assets/img/django/banner.png"
+tags: 
+    - Python 
+    - Django
 ---
 
 기존에 Django에서 여러개의 필드에게 unique를 부여하고 싶을때 `unique_toghter`를 사용했었습니다.

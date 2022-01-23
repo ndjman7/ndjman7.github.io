@@ -1,10 +1,11 @@
 ---
 layout: post
 title:  "Django 모델 복제하기"
+subtitle: "Django 모델 복제하기"
 author: Pando
-categories: Til
-tag: Django
-cover:  "/assets/instacode.png"
+header-img:  "assets/instacode.png"
+tags:
+    - Django
 ---
 
 # django 모델 복제하기

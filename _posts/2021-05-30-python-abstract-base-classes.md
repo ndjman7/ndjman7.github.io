@@ -2,9 +2,9 @@
 layout: post
 title:  "Python에서 추상클래스 다루기"
 author: Pando
-categories: Python
-tag: [Python]
-cover:  "/assets/img/python.png"
+header-img:  "assets/img/python.png"
+tags:
+    - Python
 ---
 
 Python에 추상클래스의 구현방식을 알아봅니다.

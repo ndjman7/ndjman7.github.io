@@ -2,9 +2,12 @@
 layout: post
 title:  "Github Action으로 CI 대체하기"
 author: Pando
-categories: Action
-tag: [Github Action, Django, pytest, CI]
-cover:  "/assets/img/github_action/github_action_cover.png"
+header-img:  "assets/img/github_action/github_action_cover.png"
+tags: 
+    - Github Action
+    - Django
+    - pytest
+    - CI
 ---
 
 # Github Action으로 CI 대체하기

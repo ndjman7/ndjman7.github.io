@@ -2,9 +2,10 @@
 layout: post
 title:  "Python Pacakge requirements.txt로 관리하기"
 author: Pando
-categories: Python
-tag: [Python, Package]
-cover:  "/assets/img/requirements/requirements-txt.png"
+header-img:  "assets/img/requirements/requirements-txt.png"
+tags: 
+    - Python
+    - Package
 ---
 
 ## Python Package 관리는 requirements.txt 라는 파일로 합니다.

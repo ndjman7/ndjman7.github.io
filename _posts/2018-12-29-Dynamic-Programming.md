@@ -2,9 +2,9 @@
 layout: post
 title:  "Dynamic Programming"
 author: Pando
-categories: Til
-tag: Alogrithm
-cover:  "/assets/instacode.png"
+header-img:  "assets/instacode.png"
+tags: 
+    - Alogrithm
 ---
 
 # Dynamic Programming

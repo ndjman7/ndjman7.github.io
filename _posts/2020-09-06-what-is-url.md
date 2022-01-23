@@ -2,9 +2,11 @@
 layout: post
 title:  "URL이란 무엇일까?"
 author: Pando
-categories: CommonSense
-tag: [URL, Internet, CommonSense]
-cover:  "/assets/img/url/url.jpg"
+header-img:  "assets/img/url/url.jpg"
+tags: 
+    - URL
+    - Internet
+    - CommonSense
 ---
 
 # URL이란 무엇일까?

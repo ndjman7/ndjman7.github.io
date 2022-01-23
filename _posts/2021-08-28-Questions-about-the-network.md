@@ -2,9 +2,9 @@
 layout: post
 title:  "네트워크에 대한 궁금증"
 author: Pando
-categories: Network
 tag: [Network]
-cover:  "/assets/img/network/main.png"
+header-mask: 0.3
+header-img:  "assets/img/network/main.png"
 ---
 
 ## 네트워크 질문 리스트

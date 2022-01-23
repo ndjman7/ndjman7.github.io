@@ -2,9 +2,10 @@
 layout: post
 title:  "DRF serializer fields source, required, allow_null에 대하여"
 author: Pando
-categories: DRF
-tag: [DRF, serializer]
-cover:  "/assets/img/drf/main.png"
+header-img:  "assets/img/drf/main.png"
+tags: 
+    - DRF
+    - serializer
 ---
 
 # 들어가기에 앞서

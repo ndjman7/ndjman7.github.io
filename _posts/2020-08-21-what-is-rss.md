@@ -2,9 +2,11 @@
 layout: post
 title:  "RSS란 무엇일까?"
 author: Pando
-categories: CommonSense
-tag: [RSS, Crawling, CommonSense]
-cover:  "/assets/img/rss/rss.png"
+header-img:  "assets/img/rss/rss.png"
+tags: 
+    - RSS
+    - Crawling
+    - CommonSense
 ---
 
 # RSS란 무엇일까?
