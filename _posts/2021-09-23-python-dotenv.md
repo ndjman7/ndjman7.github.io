@@ -1,10 +1,12 @@
 ---
 layout: post
 title:  "Python에서 dotenv 사용하기"
+date: 2021-09-23 12:00:00
 author: Pando
-categories: Python
-tag: [Python]
-cover:  "/assets/img/python.png"
+catalog: true
+header-img:  "assets/img/python.png"
+tags:
+    - Python
 ---
 
 ```sh

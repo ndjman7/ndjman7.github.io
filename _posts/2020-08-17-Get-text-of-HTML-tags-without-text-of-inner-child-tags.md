@@ -2,9 +2,11 @@
 layout: post
 title:  "파이썬 크롤링으로 자식 태그를 제외한 HTML 태그 text 가져오기"
 author: Pando
-categories: Crawling
-tag: [Crawling, Python, BeautifulSoup]
-cover:  "/assets/img/crawler/web_crawler.png"
+header-img:  "assets/img/crawler/web_crawler.png"
+tags: 
+    - Crawling 
+    - Python
+    - BeautifulSoup
 ---
 
 # 파이썬 크롤링으로 자식 태그를 제외한 HTML 태그 text 가져오기

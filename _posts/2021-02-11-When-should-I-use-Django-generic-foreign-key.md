@@ -2,9 +2,10 @@
 layout: post
 title:  "Django GenericForeignKey는 언제 사용할까?"
 author: Pando
-categories: Django
-tag: [Python, Django]
-cover:  "/assets/img/django/banner.jpg"
+header-img:  "assets/img/django/banner.png"
+tags: 
+    - Python
+    - Django
 ---
 
 # Django GenericForeignKey는 언제 사용할까?

@@ -2,9 +2,9 @@
 layout: post
 title:  "Python에서 정수 실수 구분하기"
 author: Pando
-categories: Python
-tag: [Python]
-cover:  "/assets/img/python.png"
+header-img:  "assets/img/python.png"
+tags: 
+    - Python
 ---
 
 # Python에서 정수 실수 구분하기
