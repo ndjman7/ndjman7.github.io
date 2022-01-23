@@ -2,9 +2,10 @@
 layout: post
 title:  "Mac에서 나의 Public IP 알아내기"
 author: Pando
-categories: IP
-tag: [Shell, IP]
-cover:  "/assets/header_image.jpg"
+header-img:  "assets/header_image.jpg"
+tags: 
+    - Shell
+    - IP
 ---
 
 # Mac에서 나의 Public IP 알아내기

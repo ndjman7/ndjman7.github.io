@@ -1,10 +1,13 @@
 ---
 layout: post
 title:  "파이썬을 이용한 클린 코드를 위한 테스트 주도 개발 Intro"
+subtitle: "파이썬을 이용한 클린 코드를 위한 테스트 주도 개발 Intro"
 author: Pando
-categories: Til TDD
-tags: TDD Django Python
-cover:  "/assets/instacode.png"
+header-img:  "assets/instacode.png"
+tags: 
+    - TDD 
+    - Django 
+    - Python
 ---
 
 # 파이썬을 이용한 클린 코드를 위한 테스트 주도 개발

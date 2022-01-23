@@ -1,7 +1,16 @@
-.DS_Store
-
-# Compiled site
 _site
+_posts/_draft
+_posts/_archive
+_archive
+node_modules
+.vscode
+*.log
+*.lock
+*.sh
+.DS_Store
+.jekyll-cache
+*/.DS_Store
+*/*/.DS_Store
 
 # Sass garbage
 .sass-cache

@@ -1,10 +1,12 @@
 ---
 layout: post
 title:  "Django Pagination 중복 발생 이슈"
+subtitle: "Django Pagination 중복 발생 이슈"
 author: Pando
-categories: Til
-tags: Django pagination
-cover:  "/assets/instacode.png"
+header-img:  "assets/instacode.png"
+tags: 
+    - Django 
+    - pagination
 ---
 
 # Django Pagination이 올바르게 작동안하는 경우
