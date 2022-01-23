@@ -3,6 +3,7 @@ layout: post
 title:  "Django GenericForeignKey는 언제 사용할까?"
 author: Pando
 header-img:  "assets/img/django/banner.png"
+header-mask: 0.4
 tags: 
     - Python
     - Django

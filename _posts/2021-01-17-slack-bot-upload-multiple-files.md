@@ -3,6 +3,7 @@ layout: post
 title:  "Slack Bot으로 파일 여러 개 업로드 하기"
 author: Pando
 header-img:  "assets/img/slack/thumbnail.jpg"
+header-mask: 0.4
 tags: 
     - Python
     - Slack

@@ -3,6 +3,7 @@ layout: post
 title:  "Django에서 UniqueConstraint 사용하기"
 author: Pando
 header-img:  "assets/img/django/banner.png"
+header-mask: 0.4
 tags: 
     - Python 
     - Django

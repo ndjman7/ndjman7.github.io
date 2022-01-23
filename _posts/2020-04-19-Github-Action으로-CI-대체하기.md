@@ -3,6 +3,7 @@ layout: post
 title:  "Github Action으로 CI 대체하기"
 author: Pando
 header-img:  "assets/img/github_action/github_action_cover.png"
+header-mask: 0.4
 tags: 
     - Github Action
     - Django

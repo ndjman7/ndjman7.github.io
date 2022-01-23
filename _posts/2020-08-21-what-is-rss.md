@@ -3,6 +3,7 @@ layout: post
 title:  "RSS란 무엇일까?"
 author: Pando
 header-img:  "assets/img/rss/rss.png"
+header-mask: 0.4
 tags: 
     - RSS
     - Crawling
