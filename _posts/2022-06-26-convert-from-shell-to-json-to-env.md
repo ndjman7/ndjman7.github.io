@@ -16,8 +16,8 @@ Shell에서 json을 .env로 형태로 만들어야하는 경우가 있습니다.
 
 ```json
 {
-		"GITHUB_ACTION_API_KEY": 1234,
-		"AWS_ACCESS_KEY": "abcd"
+  "GITHUB_ACTION_API_KEY": 1234,
+  "AWS_ACCESS_KEY": "abcd"
 }
 ```
 
