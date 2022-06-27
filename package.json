@@ -23,6 +23,6 @@
         "push": "git push origin master --tag"
     },
     "dependencies": {
-        "json-schema": "^0.4.0"
+        "json-schema": ">=0.4.0"
     }
 }
