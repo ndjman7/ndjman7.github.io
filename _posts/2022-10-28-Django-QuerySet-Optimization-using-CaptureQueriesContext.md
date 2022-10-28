@@ -4,7 +4,7 @@ title:  "Django 쿼리셋 최적화를 위한 CaptureQueriesContext"
 date: 2022-10-28 23:36:00
 author: Pando
 catalog: true
-header-img:  "assets/instacode.png"
+header-img:  "assets/img/django/banner.png"
 header-mask: 0.4
 tags:
     - Django
