@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "로컬 개발환경에서 서버 개발환경의 쿠키 이용하기 (ngrok)"
-date: 2022-10-28 23:36:00
+date: 2022-11-30 23:36:00
 author: Pando
 catalog: true
 header-img:  "assets/img/django/banner.png"
